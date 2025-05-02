@@ -1,19 +1,19 @@
 #include<stdio.h>
-void swap(int *a,int *b);
+void swap(int a,int b);
 int main()
 {
 	int a,b;
-	printf("Enter two number:");
+	printf("Enter the value of a and b:");
 	scanf("%d%d",&a,&b);
-	printf("a=%d\t b=%d",a,b);
-	swap(&a,&b);
+	printf("a=%d\t b=%d\n",a,b);
+	swap(a,b);
 	return 0;
 }
-void swap(int *a,int *b)
+void swap(int a,int b)
 {
 	int temp;
-	temp=*a;
-	*a=*b;
-	*b=temp;
-	printf("\nAfter swapping a=%d & b=%d",*a,*b);
+	temp=a;
+	a=b;
+	b=temp;
+	printf("After swapping \n a=%d\tb=%d",a,b);
 }
